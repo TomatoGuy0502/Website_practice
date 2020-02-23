@@ -1,0 +1,48 @@
+html {
+  scroll-behavior: smooth;
+}
+body{
+  margin: 0;
+  overflow-x: hidden;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+.fixed_background{
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+section{
+  min-width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home{
+  background-image: url('./src/image/good_vibe.jpg');
+}
+.menu{
+  background-image: url('./src/image/desk.jpg');
+}
+.home_picture{
+  max-height: 500px;
+  max-width: 600px;
+  width: 100%;
+}
+.home_topic{
+  font-size: 24px;
+  text-align: center;
+}
+
+
+
+/* Bootstrap */
+.bg-transparent{
+  /* background-color: #00000030!important; */
+  background: linear-gradient(#00000080, #00000005);
+}
+.nav-link{
+  cursor: pointer;
+  font-size: 20px;
+  color: rgba(255,255,255,0.9);
+}
