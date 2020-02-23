@@ -6,34 +6,81 @@ body{
   overflow-x: hidden;
   font-family: 'Noto Sans TC', sans-serif;
 }
+::-webkit-scrollbar {
+  display: none;
+}
+section{
+  position: relative;
+  min-width: 100vw;
+  /* height: 100vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* element / class */
 .fixed_background{
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
 }
-section{
-  min-width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 .home{
   background-image: url('./src/image/good_vibe.jpg');
-}
-.menu{
-  background-image: url('./src/image/desk.jpg');
 }
 .home_picture{
   max-height: 500px;
   max-width: 600px;
-  width: 100%;
+  filter: drop-shadow(-6px 6px 8px rgba(0, 0, 0, 0.3));
 }
-.home_topic{
-  font-size: 24px;
-  text-align: center;
+.home_slogan{
+  font-size: 20px;
+  color: #fff;
 }
 
+.menu{
+  height: 75vh;
+}
+.menu::after{
+  /* width: 150px;
+  height: 60px; */
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border-top: 4vh solid #5FAD56;
+  border-left: 4vh solid #F2C14E;
+  content:"";
+}
+.menu::before{
+  /* width: 150px;
+  height: 60px; */
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  border-bottom: 4vh solid #5FAD56;
+  border-right: 4vh solid #F2C14E;
+  content:"";
+}
+.menu_topic{
+  position: absolute;
+  top: 15px;
+  height: calc((75vh - 420px)/2);
+  max-height: 140px;
+}
+
+.intro{
+  background-image: url('./src/image/desk.jpg');
+}
+
+
+.swiper-container {
+  width: 100%;
+  margin: 0 20px;
+  height: 360px;
+  max-width: 1200px;
+}
+.swiper-slide{
+  width: 270px;
+}
 
 
 /* Bootstrap */

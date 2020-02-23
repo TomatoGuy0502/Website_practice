@@ -5,6 +5,7 @@
   <title>MyWebsite</title>
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,19 +21,32 @@
         <div class="navbar-nav">
           <a class="nav-item nav-link">Home</a>
           <a class="nav-item nav-link">Menu</a>
+          <a class="nav-item nav-link">Intro</a>
         </div>
       </div>
     </nav>
   </header>
   <main>
-    <section class="home fixed_background">
+    <section class="home fixed_background vh-100">
       <div class="home_content container d-flex flex-column justify-content-around align-items-center">
-        <img class="home_picture" src="./src/image/logo_waifu2x.png" width="80%">
-        <p class="home_topic">一間用心製作甜點的溫暖小店</p>
+        <img class="home_picture w-100" src="./src/image/logo_waifu2x.png" width="80%">
+        <p class="home_slogan text-center mt-4">一間用心製作甜點，充滿幸福氛圍的溫暖小店</p>
       </div>
     </section>
     <section class="menu fixed_background">
-
+      <img class="menu_topic" src="./src/image/Menu.png">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <img class="swiper-slide" src="src/image/dessert/1.jpg"></img>
+            <img class="swiper-slide" src="src/image/dessert/2.jpg"></img>
+            <img class="swiper-slide" src="src/image/dessert/3.jpg"></img>
+            <img class="swiper-slide" src="src/image/dessert/4.jpg"></img>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <section class="intro fixed_background vh-100">
+        <img class="menu_topic" src="./src/image/Intro.png">
     </section>
 
   </main>
@@ -51,6 +65,7 @@
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
   <script src="index.js"></script>
 </body>
 </html>

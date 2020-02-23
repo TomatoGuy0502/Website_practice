@@ -1,15 +1,23 @@
-// new Vue({
-//   el: '#app',
-//   data: function() {
-//     return { visible: false }
-//   }
-// })
-
-// function scrollToForm(target) {
-//   // document.querySelector('.'+target).scrollIntoView({behavior: 'smooth'});
-//   window.scrollTo(0, $('.'+target).offset().top);
-// }
 $('.nav-link').click(function(){
-  window.scrollTo(0, $('.'+$(this).text().toLowerCase()).offset().top)
-  // scrollToForm($(this).text().toLowerCase())
+  if($(this).text() === 'Menu'){
+    window.scrollTo(0, $('.'+$(this).text().toLowerCase()).offset().top- ( window.innerHeight/8 ))
+  }else{
+    window.scrollTo(0, $('.'+$(this).text().toLowerCase()).offset().top)
+  }
 })
+$(document).ready(function(){
+  var mySwiper = new Swiper ('.swiper-container', {
+    loop: true,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    slidesPerView: 'auto',
+    loopedSlides: 4,
+    centeredSlides : true,
+    spaceBetween: 20,
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  })
+});
