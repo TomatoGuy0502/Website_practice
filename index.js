@@ -9,11 +9,11 @@ $(document).ready(function(){
   var mySwiper = new Swiper ('.swiper-container', {
     loop: true,
     autoplay: {
-      delay: 2000,
+      delay: 3000,
       disableOnInteraction: false,
     },
     slidesPerView: 'auto',
-    loopedSlides: 4,
+    loopedSlides: 3,
     centeredSlides : true,
     spaceBetween: 20,
     pagination: {
