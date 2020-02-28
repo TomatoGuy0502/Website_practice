@@ -13,7 +13,6 @@ body{
 section{
   position: relative;
   min-width: 100vw;
-  /* height: 100vh; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,6 +24,8 @@ section{
   background-position: center center;
   background-size: cover;
 }
+
+/* home_section */
 .home{
   background-image: url('./src/image/good_vibe.jpg');
 }
@@ -38,13 +39,11 @@ section{
   color: #fff;
 }
 
+/* menu_section */
 .menu{
-  /* height: 75vh; */
-  padding: 100px 0;
+  padding: 90px 0 50px;
 }
 .menu::after{
-  /* width: 150px;
-  height: 60px; */
   position: absolute;
   top: 20px;
   left: 20px;
@@ -53,8 +52,6 @@ section{
   content:"";
 }
 .menu::before{
-  /* width: 150px;
-  height: 60px; */
   position: absolute;
   bottom: 20px;
   right: 20px;
@@ -66,16 +63,61 @@ section{
   font-family: 'Kalam','Noto Sans TC';
   position: absolute;
   top: 15px;
-  font-size: calc(37.5vh - 210px);
+  /* font-size: calc(37.5vh - 210px); */
+  font-size: 60px;
   color: #FFB94E;
 }
 @media (min-height: 800px){
+  .menu{
+    padding: 100px 0 60px;
+  }
   .menu_topic{
     font-size: 75px;
   }
 }
 
+/* intro_section */
 .intro{
+  /* height: 60vh; */
+  background-color: #eee;
+}
+.intro_content{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 20px;
+  box-sizing: content-box;
+}
+.intro_picture{
+  width: 50%;
+}
+.intro_picture img{
+  width: 100%;
+}
+.intro_detail{
+  width: 50%;
+  padding-left: 40px;
+}
+.intro_detail__title{
+  text-align: center;
+}
+.intro_detail__content{
+  margin-top: 15px;
+  font-size: 18px;
+}
+.intro_detail__content span{
+  font-weight: 700;
+}
+@media (max-width: 768px){
+  .intro_picture, .intro_detail{
+    width: 100%;
+  }
+  .intro_detail{
+    padding-left: 0px;
+    margin-top: 20px;
+  }
+}
+/* video_section */
+.video{
   background-image: url('./src/image/desk.jpg');
 }
 
@@ -83,13 +125,26 @@ section{
 .swiper-container {
   width: 100%;
   margin: 0 20px;
-  height: 360px;
+  height: 440px;
   max-width: 1200px;
 }
-.swiper-slide{
+.swiper-slide {
   width: 270px;
+  text-align: center;
+  height: 410px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #FFB94E;
 }
-
+.swiper-slide img{
+  width: 270px;
+  height: 360px;
+}
+.swiper-slide p{
+  font-size: 20px;
+  margin-top: 10px;
+  color: #fff;
+}
 
 /* Bootstrap */
 .bg-transparent{

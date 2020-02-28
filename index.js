@@ -1,6 +1,6 @@
 $('.nav-link').click(function(){
-  if($(this).text() === 'Menu'){
-    window.scrollTo(0, $('.'+$(this).text().toLowerCase()).offset().top- ( (window.innerHeight - 560) / 2 ))
+  if($(this).text() === 'Menu' || $(this).text() === 'Intro'){
+    window.scrollTo(0, $('.'+$(this).text().toLowerCase()).offset().top- ( (window.innerHeight - 620) / 2 ))
   }else{
     window.scrollTo(0, $('.'+$(this).text().toLowerCase()).offset().top)
   }
@@ -8,10 +8,10 @@ $('.nav-link').click(function(){
 $(document).ready(function(){
   var mySwiper = new Swiper ('.swiper-container', {
     loop: true,
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
+    // autoplay: {
+    //   delay: 3000,
+    //   disableOnInteraction: false,
+    // },
     slidesPerView: 'auto',
     loopedSlides: 3,
     centeredSlides : true,
