@@ -39,7 +39,8 @@ section{
 }
 
 .menu{
-  height: 75vh;
+  /* height: 75vh; */
+  padding: 100px 0;
 }
 .menu::after{
   /* width: 150px;
@@ -62,10 +63,16 @@ section{
   content:"";
 }
 .menu_topic{
+  font-family: 'Kalam','Noto Sans TC';
   position: absolute;
   top: 15px;
-  height: calc((75vh - 420px)/2);
-  max-height: 140px;
+  font-size: calc(37.5vh - 210px);
+  color: #FFB94E;
+}
+@media (min-height: 800px){
+  .menu_topic{
+    font-size: 75px;
+  }
 }
 
 .intro{
