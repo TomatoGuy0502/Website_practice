@@ -1,5 +1,5 @@
 $('.nav-link').click(function(){
-  if($(this).text() === 'Menu' || $(this).text() === 'Intro'){
+  if($(this).text() === 'Menu'){
     window.scrollTo(0, $('.'+$(this).text().toLowerCase()).offset().top- ( (window.innerHeight - 620) / 2 ))
   }else{
     window.scrollTo(0, $('.'+$(this).text().toLowerCase()).offset().top)
