@@ -107,6 +107,7 @@ section{
 /* video_section */
 .video{
   background-image: url('./src/image/desk.jpg');
+  padding: 100px 0;
 }
 .video_topic{
   font-size: 60px;
